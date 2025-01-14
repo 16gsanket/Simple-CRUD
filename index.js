@@ -24,7 +24,6 @@ app.get("/", (req, res) => {
 mongoose
   .connect(
     `${process.env.MONGODB_URI}`
-    // 'mongodb+srv://16gsanket:sanket@cluster0.p2bcy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
   )
   .then(() => {
     console.log("database connected");
